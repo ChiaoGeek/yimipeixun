@@ -1,1 +1,165 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>XX</title>
+	<!--  css link -->
+	<!-- 动态背景 -->
+	<link rel="stylesheet" href="statics/plugin/juqery-background/css/style.css" />
+	<!-- 引入 Bootstrap -->
+	<link href="statics/home/css/font.css" rel="stylesheet">
+    <link href="statics/home/plugin/bootstrap/bootstrap3-3-0.min.css" rel="stylesheet">
+	<!--  js  link -->
+	<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+	<!--[if lt IE 9]>
+　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+　　<![endif]-->
+	<script src="statics/home/plugin/jquery/jquery2.0.0min.js"></script>
+    <script src="statics/home/plugin/bootstrap/bootstrap3.3.0.min.js"></script>
+
+	<!-- 动态背景 -->
+    <script type='text/javascript' src='statics/home/plugin/juqery-background/js/jquery.particleground.min.js'></script>
+  	<script type='text/javascript' src='statics/home/plugin/juqery-background/js/demo.js'></script>
+
+    <!-- highchart -->
+    <link href="statics/home/plugin/highchart/css/highchar.css" rel="stylesheet" type="text/css" />
+    <script src="statics/home/plugin/highchart/js/highcharts.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="statics/home/css/index.css">
+
+    <!-- js 测试 -->
+    <script>
+        var wenku_x = {{ wenku_x | safe }};
+        var wenku_y = {{ wenku_y | safe }};
+        var scholar_x = {{ scholar_x | safe}}
+        var scholar_y = {{ scholar_y | safe}}
+    </script>
+
+</head>
+<body>
+	<!--   div header -->
+	<div id="header">
+		<div id="header-content">
+			<nav class="navbar navbar-default navbar-fixed-top u-navbar" role="navigation" id="nav">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand" id="brand">GuoWangTong</a>
+					<!--<a class="navbar-brand brand-white scrolled" id="brand" href="/"></a> -->
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active li-index"><a href="#">网站首页</a></li>
+						<li class="li-index"><a href="#" id="li-a">模考系统</a></li>
+						<li class="dropdown li-index" >
+							<a href="#"  class="dropdown-toggle" data-toggle="dropdown">
+								资料下载
+								<b class="caret"></b>
+							</a>		
+							<ul class="dropdown-menu">
+								<li><a href="#">历年真题</a></li>
+								<li><a href="#">学习笔记</a></li>
+								<li><a href="#">模拟题</a></li>
+							</ul>
+						</li>
+						<li class="li-index"><a href="#">考生论坛</a></li>
+						<li class="li-index"><a href="#">考试流程</a></li>
+						<li class="li-index"><a href="#">考试新闻</a></li>
+						<li class="li-index"><a href="#">经验介绍</a></li>
+						<li class="li-index"><a href="#">电力资讯</a></li>
+						<li class="li-index"><a href="#">电力常识</a></li>
+						<li class="li-index"><a href="#">岗位细谈</a></li>
+						<li class="li-index"><a href="#">他山之石</a></li>
+					</ul>
+					<form class="navbar-form form-nav navbar-right" >
+                    	<a class="btn btn-primary u-2 login" href="https://beta.umbreo.com/login">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    	<a class="btn btn-primary u-1 signup" href="https://beta.umbreo.com/signup">注册</a>
+            		</form>
+				</div>
+			</nav>		
+		</div>
+	</div>
+	<!-- header结束 -->
+<!-- 测试  -->
+
+<script>
+ $(function (){
+     $("#wenku-tag").popover({
+         title: '文库采集趋势图',
+         trigger: 'hover',
+         placement: 'top',
+         container: '#wenku-tag',
+         delay:
+            { show: 100,
+                hide: 100
+            },
+         html: true,
+         content: '<iframe src="http://localhost/~changzhao619/2016/test/"  scrolling="no" frameborder="0" width="600px" height="210px">'
+     });
+      $("#schoolar-tag").popover({
+         title: '学术采集趋势图',
+         trigger: 'hover',
+         placement: 'top',
+         container: '#schoolar-tag',
+         delay:
+            { show: 100,
+                hide: 100
+            },
+         html: true,
+         content: '<iframe src="http://localhost/~changzhao619/2016/test/"  scrolling="no" frameborder="0" width="600px" height="210px">'
+     });
+     $("#baike-tag").popover({
+         title: 'Bootstrap Popover',
+         trigger: 'hover',
+         placement: 'top',
+         container: '#baike-tag',
+         delay:
+            { show: 100,
+                hide: 100
+            },
+         html: true,
+         content: '<iframe src="http://localhost/~changzhao619/2016/test/"  scrolling="no" frameborder="0" width="600px" height="210px">'
+     });
+     $("#homepage-tag").popover({
+         title: 'Bootstrap Popover',
+         trigger: 'hover',
+         placement: 'top',
+         container: '#homepage-tag',
+         delay:
+            { show: 100,
+                hide: 100
+            },
+         html: true,
+         content: '<iframe src="http://localhost/~changzhao619/2016/test/"  scrolling="no" frameborder="0" width="600px" height="210px">'
+     });
+     $("#anwang-tag").popover({
+         title: 'Bootstrap Popover',
+         trigger: 'hover',
+         placement: 'top',
+         container: '#anwang-tag',
+         delay:
+            { show: 100,
+                hide: 100
+            },
+         html: true,
+         content: '<iframe src="http://localhost/~changzhao619/2016/test/"  scrolling="no" frameborder="0" width="600px" height="210px">'
+     });
+
+
+
+
+ });
+
+</script>
+    <!-- index.js -->
+    <script src="statics/home/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+html{
+	margin:0px;
+	font-size: 16px;
+	font-size:100%;
+	
+}
+body{
+	margin:0px;
+	height: 100rem;
+	
+	/*background-color: rgb(223, 229, 233);*/
+
+	
+}
+/*######################
+header 设置 开始
+######################*/
+@media only screen and (max-width: 1270px) {/*设置导航折叠时阈值*/
+ .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+  
+}
+/* header */
+
+#nav{
+	background-color:rgb(32, 47, 56);
+}
+#brand{
+
+}
+/* navbar */
+.navbar-default {
+    background-color: rgb(32, 47, 56);
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: white;
+    font-weight: 900;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: white;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    border-bottom:3px solid rgb(40, 171, 200);
+    
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: black;
+    border-bottom:3px solid rgb(40, 171, 200);
+
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: black;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+.form-nav{
+ 	padding-right: 7rem;
+ }
+@media only screen and (max-width: 1270px) {/*设置导航字体*/
+ .navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    border-bottom:none;
+    
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: black;
+    border-bottom:none;
+
+}
+ .form-nav{
+ 	padding-right: 2rem;
+ }
+
+}
+/*######################
+header 设置 结束
+######################*/
