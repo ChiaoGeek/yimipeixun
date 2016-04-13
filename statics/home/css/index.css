@@ -204,6 +204,7 @@ main-pic开始
 @media (min-width: 768px) and (max-width: 992px)  {
 .lead{
     font-size: 24px;
+    line-height: 2em;
     font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
     }
 }
@@ -212,6 +213,7 @@ main-pic开始
 @media only screen and (min-width: 1200px) { 
 .lead{
     font-size: 30px;
+    line-height: 2em;
     font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
     }
  }
