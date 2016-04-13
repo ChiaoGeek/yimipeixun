@@ -187,7 +187,7 @@ main-pic开始
 /* 小型设备（平板电脑，768px 起） */
 @media only screen and (max-width: 768px) { 
 .lead{
-    font-size: 19px;
+    font-size: 17px;
     line-height: 2em;
     font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
     text-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 0px;
