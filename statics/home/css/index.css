@@ -191,7 +191,12 @@ main-pic开始
     line-height: 2em;
     font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
     text-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 0px;
-    ｝
+    }
+#scan-course{
+    
+    margin-top: 1rem;
+    
+ }
 
 }
 
@@ -199,14 +204,16 @@ main-pic开始
 @media (min-width: 768px) and (max-width: 992px)  {
 .lead{
     font-size: 24px;
-    ｝
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+    }
 }
 
 /* 大型设备（大台式电脑，1200px 起） */
 @media only screen and (min-width: 1200px) { 
 .lead{
     font-size: 30px;
-    ｝
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+    }
  }
 
 
