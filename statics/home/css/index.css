@@ -319,7 +319,10 @@ main-pic开始
     margin-top: 3rem;
 }
 @media only screen and (max-width: 768px) {
-    #teacher-title{
+#teacher{
+    padding-bottom: 0.3rem;
+}
+#teacher-title{
     width: 100%;
     height: auto;
     margin: auto;
@@ -337,3 +340,63 @@ main-pic开始
 }
 }
 /*师资力量结束*/
+
+/*覆盖图片-开始*/
+#profession-pic{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#profession-img1{
+    margin: auto;
+}
+/*覆盖图片-结束*/
+
+/*优秀学员-开始*/
+#super-student{
+    width: 100%;
+    height: auto;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 3rem;
+}
+#student-content{
+    margin-top: 2rem;
+    text-align: center;
+}
+#student-title{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding-top: 3rem;
+}
+#student-title-p{
+    color: rgb(86, 86, 86);
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+.student-name{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.student-desc{
+    color: rgb(92, 92, 92);
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+    line-height: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+
+    #student-title-p {
+        color: rgb(86, 86, 86);
+        font-size: 30px;
+        font-weight: 400;
+        font-style: italic;
+        font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+    }
+    #super-student{
+        padding-bottom: 0.3rem;
+    }
+}
+/*优秀学员-结束*/
