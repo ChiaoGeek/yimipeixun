@@ -29,15 +29,12 @@
     <link href="statics/home/plugin/highchart/css/highchar.css" rel="stylesheet" type="text/css" />
     <script src="statics/home/plugin/highchart/js/highcharts.js"></script>
 
+    <!--jquery-goup-master-->
+    <script src="statics/home/plugin/jquery-goup-master/jquery.goup.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="statics/home/css/index.css">
 
     <!-- js 测试 -->
-    <script>
-        var wenku_x = {{ wenku_x | safe }};
-        var wenku_y = {{ wenku_y | safe }};
-        var scholar_x = {{ scholar_x | safe}}
-        var scholar_y = {{ scholar_y | safe}}
-    </script>
 
 </head>
 <body>
@@ -96,13 +93,13 @@
         <div id="pic-content">
             <div id="blank_one"></div>
             <div id="logo-square">
-                <i class="iconfont-pic">&#xe609;</i>
+                <i class="iconfont-pic">&#xe604;</i>
             </div>
             <div id="desc-content">
                 <p class="lead">为您提供最新的国家电网招聘信息、考试资料、笔面试辅导,让您全面了解国家电网招聘考试,轻松备考,成功拿到offer!</p>
             </div>
             <div id="scan-course" >
-                <a href="#" class="btn btn-default btn-lg" style="background-color: rgb(255,128,0);color: white;border-radius:0px;border: 0px;" role="button">
+                <a href="#" id="scan-course-a" class="btn btn-default btn-lg" style="background-color: rgb(255,128,0);color: white;border-radius:0px;border: 0px;" role="button">
                         点击查看课程
                 </a>
             </div>
@@ -118,23 +115,23 @@
         <div id="purpose-advantage" class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12" id="advantage-1">
-                    <div><i class="iconfont" >&#xe609;</i></div>
+                    <div><i class="iconfont" >&#xe615;</i></div>
 				  	<div class="icon-desc"><i class="heiti-normal1" >师资雄厚</i></div>
                     <p class="advantage-content">为您提供最新的国家电网招聘信息、考试资料、笔面试辅导,让您全面了解国家电网招聘考试,轻松备考,成功拿到offer!</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12" id="advantage-2">
-                    <div><i class="iconfont" >&#xe609;</i></div>
-				  	<div class="icon-desc"><i class="heiti-normal1" >师资雄厚</i></div>
+                    <div><i class="iconfont" >&#xe60a;</i></div>
+				  	<div class="icon-desc"><i class="heiti-normal1" >资源丰富</i></div>
                     <p class="advantage-content">为您提供最新的国家电网招聘信息、考试资料、笔面试辅导,让您全面了解国家电网招聘考试,轻松备考,成功拿到offer!</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12" id="advantage-3">
-                    <div><i class="iconfont">&#xe609;</i></div>
-				  	<div class="icon-desc"><i class="heiti-normal1" >师资雄厚</i></div>
+                    <div><i class="iconfont">&#xe602;</i></div>
+				  	<div class="icon-desc"><i class="heiti-normal1" >因材施教</i></div>
                     <p class="advantage-content">为您提供最新的国家电网招聘信息、考试资料、笔面试辅导,让您全面了解国家电网招聘考试,轻松备考,成功拿到offer!</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12" id="advantage-4">
-                    <div><i class="iconfont" >&#xe609;</i></div>
-				  	<div class="icon-desc"><i class="heiti-normal1" >师资雄厚</i></div>
+                    <div><i class="iconfont" >&#xe60f;</i></div>
+				  	<div class="icon-desc"><i class="heiti-normal1" >课程科学</i></div>
                     <p class="advantage-content">为您提供最新的国家电网招聘信息、考试资料、笔面试辅导,让您全面了解国家电网招聘考试,轻松备考,成功拿到offer!</p>
                 </div>
             </div>
@@ -240,109 +237,190 @@
     <div id="super-student">
         <div id="student-title"><p class="lead" id="student-title-p">优秀学员</p></div>
         <div id="student-content" class="container">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <img src="statics/home/img/student.jpg" alt="student" class="img-circle">
-                <div class="caption">
-                        <h3 class=""><a href="#" class="btn btn-primary student-name" role="button">张同学</a></h3>
-                        <p class="student-desc">2015年面试第一名，考入河北电力公司，现在石家庄平山县供电公司工作</p>
-                </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="statics/home/img/student.jpg" alt="student" class="img-circle">
+                    <div class="caption">
+                            <h3 class=""><a href="#" class="btn btn-primary student-name" role="button">张同学</a></h3>
+                            <p class="student-desc">2015年面试第一名，考入河北电力公司，现在石家庄平山县供电公司工作</p>
+                    </div>
 
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <img src="statics/home/img/student.jpg" alt="student" class="img-circle">
-                <div class="caption">
-                        <h3 class=""><a href="#" class="btn btn-primary student-name" role="button">张同学</a></h3>
-                        <p class="student-desc">2015年面试第一名，考入河北电力公司，现在石家庄平山县供电公司工作</p>
                 </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="statics/home/img/student.jpg" alt="student" class="img-circle">
+                    <div class="caption">
+                            <h3 class=""><a href="#" class="btn btn-primary student-name" role="button">张同学</a></h3>
+                            <p class="student-desc">2015年面试第一名，考入河北电力公司，现在石家庄平山县供电公司工作</p>
+                    </div>
 
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <img src="statics/home/img/student.jpg" alt="student" class="img-circle">
-                <div class="caption">
-                        <h3 class=""><a href="#" class="btn btn-primary student-name" role="button">张同学</a></h3>
-                        <p class="student-desc">2015年面试第一名，考入河北电力公司，现在石家庄平山县供电公司工作</p>
                 </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="statics/home/img/student.jpg" alt="student" class="img-circle">
+                    <div class="caption">
+                            <h3 class=""><a href="#" class="btn btn-primary student-name" role="button">张同学</a></h3>
+                            <p class="student-desc">2015年面试第一名，考入河北电力公司，现在石家庄平山县供电公司工作</p>
+                    </div>
 
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <img src="statics/home/img/student.jpg" alt="student" class="img-circle">
-                <div class="caption">
-                        <h3 class=""><a href="#" class="btn btn-primary student-name" role="button">张同学</a></h3>
-                        <p class="student-desc">2015年面试第一名，考入河北电力公司，现在石家庄平山县供电公司工作</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="statics/home/img/student.jpg" alt="student" class="img-circle">
+                    <div class="caption">
+                            <h3 class=""><a href="#" class="btn btn-primary student-name" role="button">张同学</a></h3>
+                            <p class="student-desc">2015年面试第一名，考入河北电力公司，现在石家庄平山县供电公司工作</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!--优秀学员-结束-->
+
+    <!--备考规划-开始-->
+    <div id="plan">
+        <div id="plan-title"><p class="lead" id="plan-title-p">备考规划</p></div>
+        <!--plan1-->
+        <div class="container plan1" id="plan-one">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12  plan-world1">
+                    <h3 class="section-title1">一、基础备考，夯实基础</h3>
+                    <p class="section-content1">
+                        首先要了解考试的大体内容并掌握。考生需要理解知识，掌握方法，考生要认真阅读，以做到心中有数，有计划地复习。在基础备考阶段，透彻理解教材基础知识，查找自己的弱点，漏洞补上，齐头并进。
+                    </p>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12  plan-pic1"><i class="iconfont-plan" >&#xe60b;</i></div>
+            </div>
+        </div>
+        <!--plan2-->
+        <div  class="container plan1">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12  center plan-pic1" id="section-two-left"><i class="iconfont-plan" >&#xe60c;</i></div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 center plan-world1" id="section-two-right">
+                    <h3 class="section-title1">二、专项提升，重点突破</h3>
+                    <p class="section-content1">
+                        通过基础阶段的学习，很多考生可能感觉自己有很大的提高，但是模拟成绩还是不尽如人意，问题就出在考生针对某些自己不擅长、或者是没有透彻掌握的知识点依然束手无策。这个时候就要考生根据自己基础学习过程中的实际情况，缩小复习范围，把时间和精力主要放在对考试重点和难点以及自己不擅长的知识点来复习。通过模拟考试，查找自己的薄弱环节。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--plan3-->
+        <div class="container plan1" >
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12  plan-world1">
+                    <h3 class="section-title1">三、冲刺巩固，难点攻克</h3>
+                    <p class="section-content1">
+                       由于考生对各种题型的答题技巧都有了熟练的掌握，但是国家电网招聘考试是（综合能力+专业知识）一个整体，在这个阶段，考生应注重从整体上把握考试，要化零为整。
+                    </p>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12  plan-pic1"><i class="iconfont-plan" >&#xe60e;</i></div>
+            </div>
+        </div>
+    </div>
+    <!--备考规划-结束-->
+
+    <!--课程-开始-->
+    <div id="course">
+        <div id="course-title"><p class="lead" id="course-title-p">课程介绍</p></div>
+        <div id="course-subtitle"><p class="lead" id="course-subtitle-p">全程指导,因材施教,最优服务,最佳教学,给您实实在在的高分承诺.</p></div>
+        <div id="course-container" class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="thumbnail">
+                        <img src="http://static.bootcss.com/www/assets/img/stickup.png" alt="">
+                        <div class="caption">
+                            <h3 style="text-align: center"><a href="" title="" target="_blank">国网基础班</a></h3>
+                            <h4><span class="label label-danger">上课地点</span></h4>
+                            <p>上海市浦东新区民生路1199弄-1-3号</p>
+                            <h4><span class="label label-danger">适应学员</span></h4>
+                            <p>距离考试时间在6-8个月的学员；</p>
+                            <p style="text-align: center">
+                                <a href="#" class="btn btn-default" role="button">了解详情</a>
+                                <a href="#" class="btn btn-success" role="button">点击报名</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="thumbnail">
+                        <img src="http://static.bootcss.com/www/assets/img/stickup.png" alt="">
+                        <div class="caption">
+                            <h3 style="text-align: center"><a href="" title="" target="_blank">国网强化班</a></h3>
+                            <h4><span class="label label-danger">上课地点</span></h4>
+                            <p>上海市浦东新区民生路1199弄-1-3号</p>
+                            <h4><span class="label label-danger">适应学员</span></h4>
+                            <p>距离考试时间在4-6个月的学员；</p>
+                            <p style="text-align: center">
+                                <a href="#" class="btn btn-default" role="button">了解详情</a>
+                                <a href="#" class="btn btn-success" role="button">点击报名</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="thumbnail">
+                        <img src="http://static.bootcss.com/www/assets/img/stickup.png" alt="">
+                        <div class="caption">
+                            <h3 style="text-align: center"><a href="" title="" target="_blank">国网冲刺班</a></h3>
+                            <h4><span class="label label-danger">上课地点</span></h4>
+                            <p>上海市浦东新区民生路1199弄-1-3号</p>
+                            <h4><span class="label label-danger">适应学员</span></h4>
+                            <p>距离考试时间为1-2个月；</p>
+                            <p style="text-align: center">
+                                <a href="#" class="btn btn-default" role="button">了解详情</a>
+                                <a href="#" class="btn btn-success" role="button">点击报名</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="thumbnail">
+                        <img src="http://static.bootcss.com/www/assets/img/stickup.png" alt="">
+                        <div class="caption">
+                            <h3 style="text-align: center"><a href="" title="" target="_blank">国网点题班</a></h3>
+                            <h4><span class="label label-danger">上课地点</span></h4>
+                            <p>上海市浦东新区民生路1199弄-1-3号</p>
+                            <h4><span class="label label-danger">适应学员</span></h4>
+                            <p>所有学员，特别是距离考试还有15天左右时间的学员。 </p>
+                            <p style="text-align: center">
+                                <a href="#" class="btn btn-default" role="button">了解详情</a>
+                                <a href="#" class="btn btn-success" role="button">点击报名</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--课程-结束-->
+
+    <!--footer-开始-->
+    <div id="footer">
+        <p class="lead">懋润教育科技出品，保留所有权利</p>
+    </div>
+    <!--footer-结束-->
 <!-- 测试  -->
 
 <script>
- $(function (){
-     $("#wenku-tag").popover({
-         title: '文库采集趋势图',
-         trigger: 'hover',
-         placement: 'top',
-         container: '#wenku-tag',
-         delay:
-            { show: 100,
-                hide: 100
-            },
-         html: true,
-         content: '<iframe src="http://localhost/~changzhao619/2016/test/"  scrolling="no" frameborder="0" width="600px" height="210px">'
-     });
-      $("#schoolar-tag").popover({
-         title: '学术采集趋势图',
-         trigger: 'hover',
-         placement: 'top',
-         container: '#schoolar-tag',
-         delay:
-            { show: 100,
-                hide: 100
-            },
-         html: true,
-         content: '<iframe src="http://localhost/~changzhao619/2016/test/"  scrolling="no" frameborder="0" width="600px" height="210px">'
-     });
-     $("#baike-tag").popover({
-         title: 'Bootstrap Popover',
-         trigger: 'hover',
-         placement: 'top',
-         container: '#baike-tag',
-         delay:
-            { show: 100,
-                hide: 100
-            },
-         html: true,
-         content: '<iframe src="http://localhost/~changzhao619/2016/test/"  scrolling="no" frameborder="0" width="600px" height="210px">'
-     });
-     $("#homepage-tag").popover({
-         title: 'Bootstrap Popover',
-         trigger: 'hover',
-         placement: 'top',
-         container: '#homepage-tag',
-         delay:
-            { show: 100,
-                hide: 100
-            },
-         html: true,
-         content: '<iframe src="http://localhost/~changzhao619/2016/test/"  scrolling="no" frameborder="0" width="600px" height="210px">'
-     });
-     $("#anwang-tag").popover({
-         title: 'Bootstrap Popover',
-         trigger: 'hover',
-         placement: 'top',
-         container: '#anwang-tag',
-         delay:
-            { show: 100,
-                hide: 100
-            },
-         html: true,
-         content: '<iframe src="http://localhost/~changzhao619/2016/test/"  scrolling="no" frameborder="0" width="600px" height="210px">'
-     });
 
+    $('#scan-course-a').click(function(){
+        $('html,body').animate({scrollTop:$('#course').offset().top}, 1000);
+        return false;
+    });
 
+    $(document).ready(function () {
+            $.goup({
+                trigger: 100,
+                bottomOffset: 150,
+                locationOffset: 50,
+                title: '回到顶部',
+                titleAsText: true,
+                arrowColor: '#fff',
+                containerColor: '#4694D1',
+                titleAsTextClass: 'go-up-title'
 
+            });
+        });
 
- });
 
 </script>
     <!-- index.js -->

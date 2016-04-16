@@ -400,3 +400,157 @@ main-pic开始
     }
 }
 /*优秀学员-结束*/
+
+/*备考规划-开始*/
+#plan{
+    width: 100%;
+    height: auto;
+    padding-bottom: 3rem;
+}
+#plan-title{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding-top: 3rem;
+}
+#plan-title-p{
+    color: black;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+.plan1{
+    margin-top: 4rem;
+}
+#plan-one{
+    margin-top: 1rem;
+}
+.plan-world1{
+    padding-top: 6rem;
+}
+.section-title1{
+    color: rgb(86, 86, 86);
+    font-size: 2rem;
+    text-align: left;
+
+}
+.section-content1{
+    text-align: left;
+    color: rgb(51, 51, 51);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+.plan-pic1{
+    text-align: center;
+}
+.iconfont-plan{
+    font-family:"iconfont" !important;
+    font-size:14rem;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgb(52, 147, 213);
+
+}
+@media only screen and (max-width: 768px) {
+     #plan-title-p {
+        color: rgb(86, 86, 86);
+        font-size: 30px;
+        font-weight: 400;
+        font-style: italic;
+        font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+    }
+    .plan1{
+        margin-top: 0rem;
+    }
+    #plan-one{
+        margin-top: 0rem;
+    }
+    .plan-world1{
+        padding-top: 2rem;
+    }
+    .section-title1{
+        font-size: 1.5rem;
+    }
+    .section-content1{
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+}
+/*备考规划-结束*/
+
+/*课程-开始*/
+#course{
+    width: 100%;
+    height: auto;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 3rem;
+}
+#course-container{
+    margin-top: 2rem;
+}
+#course-title{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding-top: 3rem;
+}
+#course-title-p{
+    color: black;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+#course-subtitle{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    /*border-bottom: 1px solid rgb(238, 238, 238);*/
+
+}
+#course-subtitle-p{
+    color: rgb(51, 51, 51);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+@media only screen and (max-width: 768px) {
+     #course-title-p {
+        color: rgb(86, 86, 86);
+        font-size: 30px;
+        font-weight: 400;
+        font-style: italic;
+        font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+    }
+    #course-subtitle-p{
+    color: rgb(51, 51, 51);
+    font-size: 0.8rem;
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+}
+/*课程-结束*/
+
+/*footer-开始*/
+#footer{
+    width: 100%;
+    background-color: #2d2d2d;
+    height: 3rem;
+
+}
+#footer p{
+    color: #666;
+    font-size: 0.8rem;
+    line-height: 3rem;
+
+}
+/*footer-结束*/
+
+/*go-up*/
+.go-up-title{
+    color: #4694D1;
+    font-weight: 900;
+}
